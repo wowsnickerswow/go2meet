@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Oject Model">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="listeners.CustomListeners" />
+	</listeners>
+
+
+	<test name="LoginTest">
+		<classes>
+			<class name="testCases.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	
+	<test name="CreateEventTest">
+		<classes>
+			<class name="testCases.CreateEventTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+
+</suite> <!-- Suite -->
